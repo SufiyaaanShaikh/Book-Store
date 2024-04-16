@@ -1,7 +1,7 @@
 
 // Animation 
+var tl = gsap.timeline();
 function HomePage() {
-    var tl = gsap.timeline();
 
     tl.from(".logo-content, .navbar .nav, .navbar img, .navbar .btn", {
         x: 100,
@@ -448,7 +448,6 @@ ContactPage();
 // Hover 
 function Hover() {
     const headBtn = document.querySelector(".navbar .btn"),
-        mainBtn = document.querySelector(".read-content .btn"),
         MainImg = document.querySelector(".main-img img");
 
     headBtn.addEventListener("mouseover", () => {
@@ -462,24 +461,6 @@ function Hover() {
     });
     headBtn.addEventListener("mouseout", () => {
         gsap.to(".navbar .btn ", {
-            backgroundColor: "#FFCA42",
-            color: "#1B3764",
-            ease: "circ.out",
-            duration: 0.6,
-        })
-    });
-
-    mainBtn.addEventListener("mouseover", () => {
-        gsap.to(".read-content .btn", {
-            backgroundColor: "unset",
-            border: " 1px solid #FFCA42",
-            color: "#fff",
-            ease: "circ.out",
-            duration: 0.8,
-        })
-    });
-    mainBtn.addEventListener("mouseout", () => {
-        gsap.to(".read-content .btn ", {
             backgroundColor: "#FFCA42",
             color: "#1B3764",
             ease: "circ.out",
@@ -503,3 +484,24 @@ function Hover() {
     });
 }
 Hover();
+
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+// Add event listener to handle changes in screen size
+mediaQuery.addListener(handleScreenSizeChange);
+
+// Function to handle screen size changes
+function handleScreenSizeChange() {
+  if (mediaQuery.matches) {
+    // Remove animation on smaller screens
+    console.log("working");
+    tl.kill(); // Kill the animation
+    //gsap.set(".logo-content, .navbar .nav, .navbar img, .navbar .btn, .main-img img, .main-content h3, .main-content #title, .main-content .main-para, .main-content .read-content, .main-content .main-list,  ", { clearProps: "all" })
+  } else {
+    // Restore animation on larger screens
+    tl.restart(); // Restart the animation
+  }
+}
+
+// Initial check for screen size on page load
+handleScreenSizeChange();
