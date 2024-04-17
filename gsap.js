@@ -496,7 +496,7 @@ function handleScreenSizeChange() {
     // Remove animation on smaller screens
     console.log("working");
     tl.kill(); // Kill the animation
-    //gsap.set(".logo-content, .navbar .nav, .navbar img, .navbar .btn, .main-img img, .main-content h3, .main-content #title, .main-content .main-para, .main-content .read-content, .main-content .main-list,  ", { clearProps: "all" })
+    gsap.set(".logo-content, .navbar .nav, .navbar img, .navbar .btn, .main-img img, .main-content h3, .main-content #title, .main-content .main-para, .main-content .read-content, .main-content .main-list,  ", { clearProps: "all" })
   } else {
     // Restore animation on larger screens
     tl.restart(); // Restart the animation

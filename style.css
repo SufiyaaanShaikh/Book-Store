@@ -519,7 +519,7 @@ header .navbar .btn {
   font-size: 35px;
   position: relative;
   margin-bottom: 31px;
-  opacity: 0.3;
+  /* opacity: 0.3; */
 }
 
 #main-getbook .getbook-content #getbook-h1-effect {
@@ -530,6 +530,7 @@ header .navbar .btn {
   overflow: hidden;
   color: #fff;
   opacity: 1;
+  display: none;
 }
 
 #main-getbook .getbook-content h1::after {
@@ -549,7 +550,7 @@ header .navbar .btn {
   line-height: 25px;
   inline-size: 31em;
   margin-bottom: 34px;
-  opacity: 0.3;
+  /* opacity: 0.3; */
 }
 
 #main-getbook .getbook-content #getbook-p-effect {
@@ -560,6 +561,7 @@ header .navbar .btn {
   overflow: hidden;
   color: #fff;
   opacity: 1;
+  display: none;
 }
 
 #main-getbook .getbook-content a {
@@ -1252,752 +1254,6 @@ footer .footer-container .utility a:hover {
 .fa-times {
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    padding: 1.4em 3em;
-    position: relative;
-  }
-
-  header .logo-content .logo-img {
-    height: 26px;
-  }
-
-  header .logo-content .logo-social {
-    display: none;
-  }
-
-  header .navbar nav {
-    transition: all 0.2s ease;
-    display: flex;
-    position: absolute;
-    right: -33em;
-    flex-direction: column;
-    top: 65px;
-    gap: 0.4em;
-    width: 12em;
-    background: rgb(255, 255, 255);
-    border-radius: 20px 20px 0 0;
-    padding: 15px 10px;
-    z-index: 1;
-  }
-
-  header .navbar .toggle-nav {
-    display: flex;
-    position: absolute;
-    right: 2em;
-    flex-direction: column;
-    top: 65px;
-    gap: 0.4em;
-    width: 12em;
-    background: rgb(255, 255, 255);
-    border-radius: 20px 20px 0 0;
-    padding: 15px 10px;
-    z-index: 1;
-  }
-
-  header .navbar nav a:nth-child(2)::after {
-    content: url("image/arrow-down-s-line.svg");
-    top: 15px;
-    font-size: 15px;
-    width: 18px;
-    right: 48px;
-  }
-
-  header .navbar nav a {
-    color: rgb(0, 0, 0);
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    height: 3em;
-    display: grid;
-    place-items: center;
-    border-radius: 20px;
-  }
-
-  header .navbar .toggle-nav a:hover {
-    background: #ffffff6e;
-  }
-
-  header .logo-content .logo-social {
-    transition: all 3s ease;
-    position: absolute;
-    right: -63em;
-    z-index: 2;
-    top: 16em;
-    background: #fff;
-    width: 12em;
-    display: grid;
-    place-items: center;
-    border-radius: 0 0 20px 20px;
-  }
-
-  header .logo-content .social-toggle {
-    position: absolute;
-    left: 31em;
-    z-index: 2;
-    top: 16em;
-    background: #fff;
-    width: 12em;
-    display: grid;
-    place-items: center;
-    border-radius: 0 0 20px 20px;
-  }
-
-  header .logo-content .logo-social img {
-    height: 3em;
-    width: 100%;
-  }
-  header .navbar .btn {
-    width: 14vw;
-    font-size: 12px;
-  }
-  header .navbar nav .block {
-    height: 3em;
-    display: grid;
-    place-items: center;
-  }
-  header .navbar nav .block p {
-    color: #000000;
-  }
-
-  #menu {
-    display: block;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  #main {
-    padding: 0em 3em 2em;
-    height: unset;
-  }
-
-  #main .main-content {
-    padding-top: 2em;
-  }
-
-  #main .main-content h3::before {
-    width: 19px;
-    top: 7px;
-    left: -25px;
-  }
-
-  #main .main-content h3 {
-    font-size: 14px;
-  }
-
-  #main .main-content .read-content .btn {
-    font-size: 12px;
-    padding: 8px 25px;
-  }
-
-  #main .main-content .read-content .read {
-    font-size: 11px;
-  }
-
-  #main .main-content .main-list {
-    gap: 3em;
-  }
-
-  #main .main-content .main-list ul li {
-    font-size: 15px;
-  }
-
-  #main .main-content .main-list ul li::marker {
-    font-size: 24px;
-  }
-
-  #main-author {
-    padding: 2em 3em;
-  }
-
-  #main-author h1 {
-    font-size: 4vw;
-  }
-
-  #main-author .hori {
-    width: 4em;
-  }
-
-  #main-author .author-container {
-    /* flex-direction: column; */
-  }
-
-  #main-author .author-container .author-card {
-    /* width: 62vw;
-    height: 21em; */
-    display: block;
-    width: unset;
-    height: unset;
-  }
-
-  #main-author .author-container .author-card .author-img {
-    /* display: grid;
-    place-items: center; */
-  }
-
-  #main-author .author-container .author-card .author-img img {
-    width: 31vw;
-  }
-  #main-author .author-card .author-content {
-    margin: unset;
-  }
-  #main-author .author-card .author-content ul {
-    margin-bottom: 2.7em;
-  }
-  #main-author .author-card .author-content .btn {
-    position: static;
-  }
-
-  #main-about {
-    padding: 2em 3em;
-    height: unset;
-  }
-
-  #main-about .main-about-img img {
-    height: 23em;
-  }
-
-  #main-about .about-author-content {
-    margin-left: 2em;
-  }
-
-  #main-about .about-author-content h3 {
-    font-size: 26px;
-  }
-
-  #main-about .about-author-content .hori {
-    margin: 8px 0px;
-  }
-
-  #main-about .about-author-content .para {
-    line-height: 23px;
-    font-size: 13px;
-    inline-size: 27em;
-  }
-
-  #main-about .about-author-content .about-info {
-    margin-top: 16px;
-    gap: 11px;
-  }
-
-  #main-about .about-author-content .about-info .about-info-block {
-    width: 7em;
-    padding-left: 5px;
-  }
-
-  #main-about .about-author-content .about-info .about-info-block h4 {
-    font-size: 25px;
-  }
-
-  #main-about .about-author-content .about-info .about-info-block p {
-    font-size: 12px;
-  }
-
-  #main-about .about-author-content .about-info .about-info-block:nth-child(2) {
-    padding: 0px 15px;
-  }
-
-  #main-about .about-author-content .about-detail {
-    width: 20em;
-    padding: 11px;
-  }
-
-  #main-about .about-author-content .about-detail .qr {
-    height: 5em;
-  }
-
-  #main-about .about-author-content .about-detail .detail-content {
-    padding: 5px 0px 10px 19px;
-  }
-
-  #main-about .about-author-content .about-detail .detail-content h5 {
-    font-size: 14px;
-    margin-bottom: 7px;
-  }
-
-  #main-about .about-author-content .about-detail .detail-content p {
-    font-size: 12px;
-    line-height: 22px;
-  }
-
-  #main-company {
-    padding: 2em;
-  }
-
-  #main-company .company-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #main-company .company-container .company-card {
-    display: grid;
-    place-items: center;
-  }
-
-  #main-getbook {
-    gap: 0em;
-    padding: 3rem;
-  }
-
-  #main-getbook .getbook-content {
-    padding: 2em 0 0 1em;
-  }
-
-  #main-getbook .getbook-img {
-    padding: 2em 0 0 1em;
-  }
-
-  #main-getbook .getbook-content h1 {
-    font-size: 27px;
-  }
-
-  #main-getbook .getbook-content p {
-    font-size: 12px;
-    line-height: 21px;
-  }
-
-  #main-getbook .getbook-content a {
-    padding: 11px 31px;
-    font-size: 13px;
-  }
-
-  #main-getbook .getbook-img {
-    height: 14em;
-  }
-
-  #main-learn {
-    padding: 3em 0em;
-  }
-
-  #main-learn h1 {
-    margin-bottom: 20px;
-  }
-
-  #main-learn .learn-block {
-    flex-direction: column;
-  }
-
-  #main-learn .learn-block .learn-container {
-    margin-top: 35px;
-  }
-
-  #main-learn .learn-block .learn-img {
-    height: 29em;
-  }
-
-  #main-chap {
-    padding: 3em 0em;
-  }
-
-  #main-chap h1::after {
-    right: 4.7em;
-  }
-
-  #main-chap h1 {
-    display: inline-block;
-  }
-
-  #main-chap .chap-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 3em;
-  }
-
-  #main-review {
-    display: grid;
-    padding: 3em;
-    place-items: center;
-    gap: 3em;
-  }
-
-  #main-review .review-content {
-    padding: 0em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #main-review .review-content h1 {
-    margin-bottom: 15px;
-  }
-
-  #main-review .review-content .para {
-    inline-size: 19em;
-  }
-
-  #main-review .review-content h4 {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-
-  #main-article {
-    padding: 3em;
-  }
-
-  #main-article .article-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-    place-items: center;
-  }
-
-  #main-article .article-container .article-card:nth-child(3) {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-
-  #input {
-    padding: 2em;
-    display: grid;
-    place-items: center;
-  }
-
-  #input .input-container {
-    width: 100%;
-  }
-
-  #input .input-container form {
-    height: 45px;
-    width: 60vw;
-  }
-
-  footer {
-    padding: 2em 0em;
-  }
-
-  footer .footer-container {
-    display: grid;
-    height: 100%;
-    gap: 0;
-    place-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 15em 15em;
-    margin: 0 4em;
-  }
-
-  footer .footer-container .logo-container {
-    margin: 0;
-  }
-
-  footer .footer-container .explore,
-  footer .footer-container .utility,
-  footer .footer-container .contact {
-    width: 15em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    padding: 1em 2em;
-  }
-
-  header .logo-content .logo-img {
-    height: 25px;
-  }
-
-  header .navbar .cart {
-    height: 23px;
-  }
-
-  header .navbar .btn {
-    padding: 7px 0px;
-    width: 75px;
-    font-size: 10px;
-  }
-
-  header .navbar .toggle-nav {
-    border-radius: 15px 15px 0 0;
-    padding: 5px 10px;
-    gap: 0;
-    width: 9em;
-    left: 20em;
-  }
-
-  header .navbar nav {
-    border-radius: 15px 15px 0 0;
-    padding: 5px 10px;
-    gap: 0;
-    width: 9em;
-    left: 20em;
-  }
-
-  header .navbar nav a {
-    font-size: 13px;
-  }
-
-  header .navbar nav a:nth-child(2)::after {
-    width: 16px;
-    right: 26px;
-  }
-
-  header .logo-content .social-toggle {
-    top: 16em;
-    width: 9em;
-    border-radius: 0 0 15px 15px;
-  }
-
-  header .logo-content .logo-social {
-    top: 16em;
-    width: 9em;
-    border-radius: 0 0 15px 15px;
-  }
-
-  header .logo-content .logo-social a img {
-    height: 35px;
-  }
-
-  header .logo-content .logo-social a {
-    width: 100%;
-  }
-
-  #main .main-img img {
-    display: none;
-  }
-
-  #main {
-    padding: 2em;
-  }
-
-  #main .main-content {
-    padding: 0;
-  }
-
-  #main .main-content h1 {
-    font-size: 25px;
-    line-height: 27px;
-  }
-
-  #main .main-content .main-para {
-    font-size: 11px;
-    line-height: 16px;
-    inline-size: 23em;
-    margin-top: 15px;
-  }
-
-  #main .main-content .read-content {
-    gap: 25px;
-    margin-top: 25px;
-  }
-
-  #main .main-content .read-content .btn {
-    font-size: 10px;
-    padding: 7px 17px;
-  }
-
-  #main .main-content .main-list {
-    margin: 15px 0 0 10px;
-    gap: 40px;
-  }
-
-  #main .main-content .main-list ul li::marker {
-    font-size: 17px;
-  }
-
-  #main .main-content .main-list ul li {
-    font-size: 13px;
-  }
-
-  #main .main-content .main-list ul p {
-    font-size: 9px;
-  }
-
-  #main-author {
-    padding: 2em;
-  }
-
-  #main-author .author-container {
-    width: 100%;
-  }
-
-  #main-author .author-container .author-card {
-    height: 15em;
-  }
-
-  #main-author .author-container .author-card .author-img img {
-    width: 10em;
-  }
-
-  #main-author .author-card .author-content h3 {
-    font-size: 19px;
-  }
-
-  #main-author .author-card .author-content p {
-    font-size: 11px;
-    line-height: 20px;
-  }
-
-  #main-author .author-card .author-content ul li::marker {
-    font-size: 22px;
-  }
-
-  #main-author .author-card .author-content ul li {
-    font-size: 14px;
-  }
-
-  #main-author .author-card .author-content .btn {
-    padding: 7px 18px;
-    font-size: 12px;
-    bottom: 45px;
-  }
-
-  #main-about {
-    padding: 15px;
-  }
-
-  #main-about .about-author-content {
-    margin-left: 0;
-  }
-
-  #main-about .main-about-img {
-    display: none;
-  }
-
-  #main-company h1::after {
-    width: 35px;
-    bottom: -9px;
-    right: 88px;
-  }
-
-  #main-company h1 {
-    font-size: 25px;
-  }
-
-  #main-company .company-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #main-getbook {
-    padding: 1rem;
-  }
-
-  #main-getbook .getbook-content {
-    padding: 0;
-  }
-
-  #main-getbook .getbook-content h1 {
-    font-size: 22px;
-  }
-
-  #main-getbook .getbook-content h1::after {
-    width: 33px;
-    bottom: -7px;
-  }
-
-  #main-getbook .getbook-content a {
-    padding: 8px 19px;
-    font-size: 12px;
-  }
-
-  #main-getbook .getbook-img {
-    display: none;
-  }
-
-  #main-learn {
-    padding: 2em 0em;
-  }
-
-  #main-learn h1 {
-    font-size: 25px;
-  }
-
-  #main-learn .learn-block .learn-container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
-  }
-
-  #main-learn .learn-block .learn-img {
-    display: none;
-  }
-
-  #main-chap h1 {
-    font-size: 25px;
-    margin-bottom: 35px;
-  }
-
-  #main-chap .chap-container {
-    padding: 0;
-  }
-
-  #main-chap .chap-container .chap-card {
-    width: 23em;
-    padding: 20px;
-    height: 11em;
-  }
-
-  #main-chap .chap-container .chap-card h4 {
-    font-size: 16px;
-  }
-
-  #main-chap .chap-container .chap-card p {
-    font-size: 13px;
-    inline-size: 23em;
-    line-height: 20px;
-  }
-
-  #main-review {
-    padding: 2em;
-    gap: 1em;
-  }
-
-  #main-review .review-content {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-  }
-
-  #main-review .review-content h1 {
-    margin-bottom: 30px;
-  }
-
-  #main-review .review-content .review-rating {
-    margin-top: 15px;
-  }
-
-  #main-review .review-content h4 {
-    grid-area: unset;
-  }
-
-  #main-review .review-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #main-article {
-    padding: 2em;
-  }
-
-  #main-article h1 {
-    font-size: 27px;
-  }
-
-  #main-article .article-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
-
-  #input {
-    padding: 1em;
-  }
-
-  #input .input-container h1::before {
-    right: 113px;
-  }
-
-  #input .input-container h1 {
-    font-size: 27px;
-  }
-
-  #input .input-container p {
-    inline-size: 27em;
-    line-height: 23px;
-    font-size: 12px;
-  }
-
-  footer .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    padding: 21px 55px;
-    gap: 15px;
-    margin: 0;
-  }
 }
 
 /*                   */
@@ -3078,4 +2334,810 @@ footer .footer-container .utility a:hover {
   letter-spacing: 0.02375rem;
   font-size: 14px;
   cursor: pointer;
+}
+
+/* Responsive  */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1.4em 3em;
+    position: relative;
+  }
+
+  header .logo-content .logo-img {
+    height: 26px;
+  }
+
+  header .logo-content .logo-social {
+    display: none;
+  }
+
+  header .navbar nav {
+    transition: all 0.2s ease;
+    display: flex;
+    position: absolute;
+    right: -20em;
+    flex-direction: column;
+    top: 65px;
+    gap: 0.4em;
+    width: 12em;
+    background: rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    padding: 15px 10px;
+    z-index: 1;
+  }
+
+  header .navbar .toggle-nav {
+    display: flex;
+    position: absolute;
+    right: 2em;
+    flex-direction: column;
+    top: 65px;
+    gap: 0.4em;
+    width: 12em;
+    background: rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    padding: 15px 10px;
+    z-index: 1;
+  }
+
+  header .navbar nav a:nth-child(2)::after {
+    content: url("image/arrow-down-s-line.svg");
+    top: 15px;
+    font-size: 15px;
+    width: 18px;
+    right: 48px;
+  }
+
+  header .navbar nav a {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 3em;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+  }
+
+  header .navbar .toggle-nav a:hover {
+    background: #ffffff6e;
+  }
+
+  header .logo-content .logo-social {
+    transition: all 0.2s ease;
+    position: absolute;
+    right: -20em;
+    z-index: 2;
+    top: 18em;
+    background: #fff;
+    width: 12em;
+    display: grid;
+    place-items: center;
+    border-radius: 0 0 20px 20px;
+  }
+
+  header .logo-content .social-toggle {
+    position: absolute;
+    left: 34em;
+    z-index: 2;
+    top: 18em;
+    background: #fff;
+    width: 12em;
+    display: grid;
+    place-items: center;
+    border-radius: 0 0 20px 20px;
+  }
+
+  header .logo-content .logo-social img {
+    height: 3em;
+    width: 100%;
+  }
+  header .navbar .btn {
+    width: 14vw;
+    font-size: 12px;
+  }
+  header .navbar nav .block {
+    height: 3em;
+    display: grid;
+    place-items: center;
+  }
+  header .navbar nav .block p {
+    color: #000000;
+  }
+
+  #menu {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #main {
+    padding: 0em 3em 4em;
+    height: unset;
+  }
+
+  #main .main-content {
+    padding-top: 2em;
+  }
+
+  #main .main-content h3::before {
+    width: 19px;
+    top: 7px;
+    left: -25px;
+  }
+
+  #main .main-content h3 {
+    font-size: 14px;
+  }
+  #main .main-content h1 {
+    font-size: 4vw;
+  }
+  #main .main-content .main-para {
+    font-size: 1.4vw;
+    line-height: 2.4vw;
+  }
+
+  #main .main-content .read-content .btn {
+    font-size: 12px;
+    padding: 8px 25px;
+  }
+
+  #main .main-content .read-content .read {
+    font-size: 11px;
+  }
+
+  #main .main-content .main-list {
+    gap: 3em;
+  }
+
+  #main .main-content .main-list ul li {
+    font-size: 15px;
+  }
+
+  #main .main-content .main-list ul li::marker {
+    font-size: 24px;
+  }
+
+  #main-author {
+    padding: 4em 3em;
+  }
+
+  #main-author h1 {
+    font-size: 4vw;
+  }
+
+  #main-author .hori {
+    width: 4em;
+  }
+
+  #main-author .author-container {
+    /* flex-direction: column; */
+  }
+
+  #main-author .author-container .author-card {
+    /* width: 62vw;
+    height: 21em; */
+    display: block;
+    width: unset;
+    height: unset;
+  }
+
+  #main-author .author-container .author-card .author-img {
+    display: grid;
+    place-items: center;
+  }
+
+  #main-author .author-container .author-card .author-img img {
+    width: 31vw;
+  }
+  #main-author .author-card .author-content {
+    margin: unset;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+  }
+  #main-author .author-card .author-content p {
+    text-align: center;
+  }
+  #main-author .author-card .author-content ul {
+    margin-bottom: 1.5em;
+  }
+  #main-author .author-card .author-content .btn {
+    position: static;
+  }
+
+  #main-about {
+    padding: 4em 3em;
+    height: unset;
+  }
+
+  #main-about .main-about-img img {
+    height: 23em;
+  }
+
+  #main-about .about-author-content {
+    margin-left: 2em;
+  }
+
+  #main-about .about-author-content h3 {
+    font-size: 26px;
+  }
+
+  #main-about .about-author-content .hori {
+    margin: 8px 0px;
+  }
+
+  #main-about .about-author-content .para {
+    line-height: 23px;
+    font-size: 13px;
+    inline-size: 24em;
+  }
+
+  #main-about .about-author-content .about-info {
+    margin-top: 16px;
+    gap: 5px;
+  }
+
+  #main-about .about-author-content .about-info .about-info-block {
+    width: 7em;
+    padding-left: 5px;
+  }
+
+  #main-about .about-author-content .about-info .about-info-block h4 {
+    font-size: 20px;
+  }
+
+  #main-about .about-author-content .about-info .about-info-block p {
+    font-size: 10px;
+  }
+
+  #main-about .about-author-content .about-info .about-info-block:nth-child(2) {
+    padding: 0px 15px;
+  }
+
+  #main-about .about-author-content .about-detail {
+    width: 20em;
+    padding: 11px;
+  }
+
+  #main-about .about-author-content .about-detail .qr {
+    height: 5em;
+  }
+
+  #main-about .about-author-content .about-detail .detail-content {
+    padding: 5px 0px 10px 19px;
+  }
+
+  #main-about .about-author-content .about-detail .detail-content h5 {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  #main-about .about-author-content .about-detail .detail-content p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  #main-company {
+    padding: 4em 3em;
+  }
+
+  #main-company .company-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #main-company .company-container .company-card {
+    display: grid;
+    place-items: center;
+  }
+
+  #main-getbook {
+    gap: 0em;
+    padding: 4em 3rem;
+  }
+
+  #main-getbook .getbook-content {
+    padding: 2em 0 0 1em;
+  }
+
+  #main-getbook .getbook-img {
+    padding: 2em 0 0 1em;
+  }
+
+  #main-getbook .getbook-content h1 {
+    font-size: 27px;
+  }
+
+  #main-getbook .getbook-content p {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  #main-getbook .getbook-content a {
+    padding: 11px 31px;
+    font-size: 13px;
+  }
+
+  #main-getbook .getbook-img {
+    height: 14em;
+  }
+
+  #main-learn {
+    padding: 3em 0em;
+  }
+
+  #main-learn h1 {
+    margin-bottom: 20px;
+  }
+
+  #main-learn .learn-block {
+    flex-direction: column;
+  }
+
+  #main-learn .learn-block .learn-container {
+    margin-top: 35px;
+  }
+
+  #main-learn .learn-block .learn-img {
+    height: 29em;
+  }
+
+  #main-chap {
+    padding: 4em 3rem;
+  }
+
+  #main-chap h1::after {
+    right: 4.7em;
+  }
+
+  #main-chap h1 {
+    display: inline-block;
+  }
+
+  #main-chap .chap-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3em;
+  }
+
+  #main-review {
+    display: grid;
+    padding: 4em 3rem;
+    place-items: center;
+    gap: 3em;
+  }
+
+  #main-review .review-content {
+    padding: 0em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #main-review .review-content h1 {
+    margin-bottom: 15px;
+  }
+
+  #main-review .review-content .para {
+    inline-size: 19em;
+  }
+
+  #main-review .review-content h4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  #main-article {
+    padding: 4em 3rem;
+  }
+
+  #main-article .article-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    place-items: center;
+  }
+
+  #main-article .article-container .article-card:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  #input {
+    padding: 4em 3rem;
+    display: grid;
+    place-items: center;
+  }
+
+  #input .input-container {
+    width: 100%;
+  }
+
+  #input .input-container form {
+    height: 45px;
+    width: 60vw;
+  }
+
+  footer {
+    padding: 4em 3rem;
+  }
+
+  footer .footer-container {
+    display: grid;
+    height: 100%;
+    gap: 0;
+    /* place-items: center; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15em 15em;
+    margin: unset;
+  }
+
+  footer .footer-container .logo-container {
+    margin: 0;
+  }
+
+  footer .footer-container .explore,
+  footer .footer-container .utility,
+  footer .footer-container .contact {
+    width: 15em;
+  }
+
+  /* Store Page  */
+  /*            */
+  #store .store-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4em 3rem;
+  }
+
+  /* Single product Page   */
+  /*                      */
+  #atomic-book .atomic-container {
+    padding: 4em 3rem;
+    display: grid;
+    place-items: center;
+    margin: unset;
+  }
+  #atomic-book .atomic-des .des-block {
+    display: grid;
+  }
+  #atomic-book .atomic-feature {
+    height: unset;
+    display: grid;
+    gap: 3em 0em;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4em 3rem;
+  }
+
+  /* Article Page  */
+  /*              */
+  #article {
+    padding: 4em 3rem;
+  }
+  #article .article-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Page  */
+  /*              */
+  #contact {
+    padding: 4em 3rem;
+    height: unset;
+    display: block;
+  }
+  #contact .right {
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1em 2em;
+  }
+
+  header .logo-content .logo-img {
+    height: 25px;
+  }
+
+  header .navbar .cart {
+    height: 23px;
+  }
+
+  header .navbar .btn {
+    padding: 7px 0px;
+    width: 75px;
+    font-size: 10px;
+  }
+
+  header .navbar .toggle-nav {
+    border-radius: 15px 15px 0 0;
+    padding: 5px 10px;
+    gap: 0;
+    width: 9em;
+    left: 20em;
+  }
+
+  header .navbar nav {
+    border-radius: 15px 15px 0 0;
+    padding: 5px 10px;
+    gap: 0;
+    width: 9em;
+    left: 20em;
+  }
+
+  header .navbar nav a {
+    font-size: 13px;
+  }
+
+  header .navbar nav a:nth-child(2)::after {
+    width: 16px;
+    right: 26px;
+  }
+
+  header .logo-content .social-toggle {
+    top: 16em;
+    width: 9em;
+    border-radius: 0 0 15px 15px;
+  }
+
+  header .logo-content .logo-social {
+    top: 16em;
+    width: 9em;
+    border-radius: 0 0 15px 15px;
+  }
+
+  header .logo-content .logo-social a img {
+    height: 35px;
+  }
+
+  header .logo-content .logo-social a {
+    width: 100%;
+  }
+
+  #main .main-img img {
+    display: none;
+  }
+
+  #main {
+    padding: 2em;
+  }
+
+  #main .main-content {
+    padding: 0;
+  }
+
+  #main .main-content h1 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  #main .main-content .main-para {
+    font-size: 11px;
+    line-height: 16px;
+    inline-size: 23em;
+    margin-top: 15px;
+  }
+
+  #main .main-content .read-content {
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  #main .main-content .read-content .btn {
+    font-size: 10px;
+    padding: 7px 17px;
+  }
+
+  #main .main-content .main-list {
+    margin: 15px 0 0 10px;
+    gap: 40px;
+  }
+
+  #main .main-content .main-list ul li::marker {
+    font-size: 17px;
+  }
+
+  #main .main-content .main-list ul li {
+    font-size: 13px;
+  }
+
+  #main .main-content .main-list ul p {
+    font-size: 9px;
+  }
+
+  #main-author {
+    padding: 2em;
+  }
+
+  #main-author .author-container {
+    width: 100%;
+  }
+
+  #main-author .author-container .author-card {
+    height: 15em;
+  }
+
+  #main-author .author-container .author-card .author-img img {
+    width: 10em;
+  }
+
+  #main-author .author-card .author-content h3 {
+    font-size: 19px;
+  }
+
+  #main-author .author-card .author-content p {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  #main-author .author-card .author-content ul li::marker {
+    font-size: 22px;
+  }
+
+  #main-author .author-card .author-content ul li {
+    font-size: 14px;
+  }
+
+  #main-author .author-card .author-content .btn {
+    padding: 7px 18px;
+    font-size: 12px;
+    bottom: 45px;
+  }
+
+  #main-about {
+    padding: 15px;
+  }
+
+  #main-about .about-author-content {
+    margin-left: 0;
+  }
+
+  #main-about .main-about-img {
+    display: none;
+  }
+
+  #main-company h1::after {
+    width: 35px;
+    bottom: -9px;
+    right: 88px;
+  }
+
+  #main-company h1 {
+    font-size: 25px;
+  }
+
+  #main-company .company-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #main-getbook {
+    padding: 1rem;
+  }
+
+  #main-getbook .getbook-content {
+    padding: 0;
+  }
+
+  #main-getbook .getbook-content h1 {
+    font-size: 22px;
+  }
+
+  #main-getbook .getbook-content h1::after {
+    width: 33px;
+    bottom: -7px;
+  }
+
+  #main-getbook .getbook-content a {
+    padding: 8px 19px;
+    font-size: 12px;
+  }
+
+  #main-getbook .getbook-img {
+    display: none;
+  }
+
+  #main-learn {
+    padding: 4em 3rem;
+  }
+
+  #main-learn h1 {
+    font-size: 25px;
+  }
+
+  #main-learn .learn-block .learn-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  #main-learn .learn-block .learn-img {
+    display: none;
+  }
+
+  #main-chap h1 {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  #main-chap .chap-container {
+    padding: 0;
+  }
+
+  #main-chap .chap-container .chap-card {
+    width: 23em;
+    padding: 20px;
+    height: 11em;
+  }
+
+  #main-chap .chap-container .chap-card h4 {
+    font-size: 16px;
+  }
+
+  #main-chap .chap-container .chap-card p {
+    font-size: 13px;
+    inline-size: 23em;
+    line-height: 20px;
+  }
+
+  #main-review {
+    padding: 2em;
+    gap: 1em;
+  }
+
+  #main-review .review-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+
+  #main-review .review-content h1 {
+    margin-bottom: 30px;
+  }
+
+  #main-review .review-content .review-rating {
+    margin-top: 15px;
+  }
+
+  #main-review .review-content h4 {
+    grid-area: unset;
+  }
+
+  #main-review .review-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-article {
+    padding: 2em;
+  }
+
+  #main-article h1 {
+    font-size: 27px;
+  }
+
+  #main-article .article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  #input {
+    padding: 1em;
+  }
+
+  #input .input-container h1::before {
+    right: 113px;
+  }
+
+  #input .input-container h1 {
+    font-size: 27px;
+  }
+
+  #input .input-container p {
+    inline-size: 27em;
+    line-height: 23px;
+    font-size: 12px;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 21px 55px;
+    gap: 15px;
+    margin: 0;
+  }
 }
