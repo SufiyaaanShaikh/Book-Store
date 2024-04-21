@@ -2873,7 +2873,7 @@ footer .footer-container .utility a:hover {
     top: 15em;
     width: 9em;
     border-radius: 0 0 15px 15px;
-    left: 13em;    
+    left: 13em;
   }
 
   header .logo-content .logo-social {
@@ -2896,7 +2896,7 @@ footer .footer-container .utility a:hover {
   }
 
   #main {
-    padding: 1em 1.5em;
+    padding: 2em 1.5em;
   }
 
   #main .main-content {
@@ -2943,7 +2943,7 @@ footer .footer-container .utility a:hover {
   }
 
   #main-author {
-    padding: 1em 1.5em;
+    padding: 2em 1.5em;
   }
   #main-author h1 {
     font-size: 6vw;
@@ -2991,7 +2991,7 @@ footer .footer-container .utility a:hover {
   }
 
   #main-about {
-    padding: 15px;
+    padding: 2em 1.5em;
   }
 
   #main-about .about-author-content {
@@ -3017,11 +3017,14 @@ footer .footer-container .utility a:hover {
   }
 
   #main-getbook {
-    padding: 1rem;
+    padding: 2em 1.5em;
   }
 
   #main-getbook .getbook-content {
     padding: 0;
+  }
+  #main-getbook .getbook-content p {
+    inline-size: 21em;
   }
 
   #main-getbook .getbook-content h1 {
@@ -3043,7 +3046,7 @@ footer .footer-container .utility a:hover {
   }
 
   #main-learn {
-    padding: 4em 3rem;
+    padding: 2em 1.5em;
   }
 
   #main-learn h1 {
@@ -3059,6 +3062,10 @@ footer .footer-container .utility a:hover {
     display: none;
   }
 
+  #main-chap {
+    padding: 2em 1.5em;
+  }
+
   #main-chap h1 {
     font-size: 25px;
     margin-bottom: 35px;
@@ -3069,13 +3076,13 @@ footer .footer-container .utility a:hover {
   }
 
   #main-chap .chap-container .chap-card {
-    width: 23em;
+    width: 21em;
     padding: 20px;
-    height: 11em;
+    height: 12em;
   }
 
   #main-chap .chap-container .chap-card h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   #main-chap .chap-container .chap-card p {
@@ -3083,9 +3090,21 @@ footer .footer-container .utility a:hover {
     inline-size: 23em;
     line-height: 20px;
   }
+  #main-chap .chap-container .chap-card ul {
+    justify-content: space-around;
+  }
+  #main-chap .chap-container .chap-card ul .chap-content {
+    display: block;
+  }
+  #main-chap .chap-des .btn {
+    font-size: 12px;
+  }
+  #main-chap .chap-des p {
+    font-size: 12px;
+  }
 
   #main-review {
-    padding: 2em;
+    padding: 2em 1.5em;
     gap: 1em;
   }
 
@@ -3112,7 +3131,7 @@ footer .footer-container .utility a:hover {
   }
 
   #main-article {
-    padding: 2em;
+    padding: 2em 1.5em;
   }
 
   #main-article h1 {
@@ -3140,6 +3159,15 @@ footer .footer-container .utility a:hover {
   #input .input-container p {
     inline-size: 27em;
     line-height: 23px;
+    font-size: 12px;
+  }
+  #input .input-container form {
+    width: 67vw;
+  }
+  #input .input-container form input[type="email"]::placeholder {
+    font-size: 12px;
+  }
+  #input .input-container form input[type="button"] {
     font-size: 12px;
   }
 
