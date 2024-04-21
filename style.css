@@ -2896,7 +2896,7 @@ footer .footer-container .utility a:hover {
   }
 
   #main {
-    padding: 2em;
+    padding: 1em 1.5em;
   }
 
   #main .main-content {
@@ -2943,15 +2943,20 @@ footer .footer-container .utility a:hover {
   }
 
   #main-author {
-    padding: 2em;
+    padding: 1em 1.5em;
+  }
+  #main-author h1 {
+    font-size: 6vw;
   }
 
   #main-author .author-container {
     width: 100%;
+    margin-top: 25px;
+    gap: unset;
   }
 
   #main-author .author-container .author-card {
-    height: 15em;
+    /* height: 15em; */
   }
 
   #main-author .author-container .author-card .author-img img {
@@ -2965,6 +2970,10 @@ footer .footer-container .utility a:hover {
   #main-author .author-card .author-content p {
     font-size: 11px;
     line-height: 20px;
+  }
+  #main-author .author-card .author-content ul {
+    margin: unset;
+    display: block;
   }
 
   #main-author .author-card .author-content ul li::marker {
