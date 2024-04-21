@@ -3201,14 +3201,15 @@ footer .footer-container .utility a:hover {
   }
   #about .about-container {
     padding: unset;
+    place-items: center;
   }
   .about-container .info {
     gap: 12px;
     padding: 1.5em;
-    width: 21em;
+    width: 19em;
   }
   .about-container .info .info-content h4 {
-    font-size: 16px;
+    font-size: 14px;
     width: 10em;
   }
   .about-container .info .info-content p {
@@ -3256,7 +3257,7 @@ footer .footer-container .utility a:hover {
     line-height: 21px;
   }
   #about-story .story-img {
-    width: 21em;
+    width: 20em;
   }
 
   /* Store Page  */
