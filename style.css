@@ -3076,17 +3076,17 @@ footer .footer-container .utility a:hover {
   }
 
   #main-chap .chap-container .chap-card {
-    width: 21em;
+    width: 20em;
     padding: 20px;
     height: 12em;
   }
 
   #main-chap .chap-container .chap-card h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #main-chap .chap-container .chap-card p {
-    font-size: 13px;
+    font-size: 11px;
     inline-size: 23em;
     line-height: 20px;
   }
