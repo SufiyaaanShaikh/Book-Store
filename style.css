@@ -3179,4 +3179,172 @@ footer .footer-container .utility a:hover {
     gap: 15px;
     margin: 0;
   }
+
+  /* About Page */
+  /*           */
+  #heading {
+    padding: 2em 1.5em;
+  }
+  #heading h1 {
+    font-size: 28px;
+  }
+  #heading h1::before {
+    right: 101px;
+  }
+  #heading p {
+    font-size: 12px;
+    inline-size: 27em;
+  }
+  #about {
+    padding: 2em 1.5em;
+    gap: 1.5em;
+  }
+  #about .about-container {
+    padding: unset;
+  }
+  .about-container .info {
+    gap: 12px;
+    padding: 1.5em;
+    width: 21em;
+  }
+  .about-container .info .info-content h4 {
+    font-size: 16px;
+    width: 10em;
+  }
+  .about-container .info .info-content p {
+    font-size: 13px;
+  }
+  .about-container .info .info-content .about-icons a img {
+    height: 13px;
+  }
+  .about-container .about-block h2 {
+    font-size: 26px;
+  }
+  .about-container .about-block p {
+    font-size: 12px;
+  }
+  .about-container .about-block a {
+    padding: 10px 35px;
+    font-size: 11px;
+  }
+  #about-story {
+    padding: 2em 1.5em;
+  }
+  #about-story .story-content h2 {
+    font-size: 28px;
+  }
+  #about-story .story-content .para {
+    font-size: 12px;
+    line-height: 21px;
+    inline-size: 27em;
+  }
+  #about-story .story-content .story-block {
+    margin-left: 13px;
+  }
+  #about-story .story-content .story-block .story-detail h4 {
+    font-size: 17px;
+    height: 41px;
+    width: 39px;
+  }
+  #about-story .story-content .story-block .story-detail .story-name h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  #about-story .story-content .story-block .story-detail .story-name p {
+    font-size: 12px;
+    inline-size: 22em;
+    line-height: 21px;
+  }
+  #about-story .story-img {
+    width: 21em;
+  }
+
+  /* Store Page  */
+  /*            */
+  #store .store-container {
+    padding: 2em 1.5em;
+  }
+  #store .store-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Single book page  */
+  /*                  */
+  #atomic-book .atomic-container {
+    padding: 2em 1.5em;
+  }
+  #atomic-book .atomic-container .atomic-des {
+    padding: 2em 1.5em;
+  }
+  #atomic-book .atomic-container .atomic-img {
+    width: 20em;
+    height: 26em;
+  }
+  #atomic-book .atomic-container .atomic-img img {
+    width: 17em;
+  }
+  #atomic-book .atomic-container .atomic-block .para {
+    font-size: 12px;
+    line-height: 22px;
+    inline-size: 26em;
+  }
+  #atomic-book .atomic-container .atomic-block .book-detail span pre {
+    font-size: 12px;
+  }
+  #atomic-book .atomic-container .atomic-block .book-detail span p {
+    font-size: 12px;
+  }
+  #atomic-book .atomic-container .atomic-block .atomic-btn {
+    grid-template-columns: 20% 67%;
+    width: 19em;
+    height: 38px;
+  }
+  #atomic-book .atomic-container .atomic-block .atomic-btn .count-block .count {
+    font-size: 12px;
+  }
+  #atomic-book
+    .atomic-container
+    .atomic-block
+    .atomic-btn
+    .count-block
+    .count-btn
+    button {
+    height: 18px;
+  }
+  #atomic-book
+    .atomic-container
+    .atomic-block
+    .atomic-btn
+    .count-block
+    .count-btn
+    button
+    img {
+    height: 19px;
+  }
+  #atomic-book .atomic-des .des-btn {
+    gap: 20px;
+  }
+  #atomic-book .atomic-des .des-btn .btn:first-child {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+  #atomic-book .atomic-des .des-btn .btn:last-child {
+    padding: 10px 24px;
+    font-size: 10px;
+  }
+  #atomic-book .atomic-des .des-block {
+    gap: 1em;
+  }
+  #atomic-book .atomic-des .des-block .des-info h3 {
+    font-size: 19px;
+  }
+  #atomic-book .atomic-des .des-block .des-info p {
+    font-size: 12px;
+    inline-size: 25em;
+  }
+  #atomic-book .atomic-feature {
+    margin: unset;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2em 1.5em;
+  }
 }
