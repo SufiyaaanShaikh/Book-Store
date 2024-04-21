@@ -2827,7 +2827,7 @@ footer .footer-container .utility a:hover {
 
 @media screen and (max-width: 480px) {
   header {
-    padding: 1em 2em;
+    padding: 1em 1.5em;
   }
 
   header .logo-content .logo-img {
@@ -2849,7 +2849,7 @@ footer .footer-container .utility a:hover {
     padding: 5px 10px;
     gap: 0;
     width: 9em;
-    left: 20em;
+    left: 14em;
   }
 
   header .navbar nav {
@@ -2857,7 +2857,7 @@ footer .footer-container .utility a:hover {
     padding: 5px 10px;
     gap: 0;
     width: 9em;
-    left: 20em;
+    left: 31em;
   }
 
   header .navbar nav a {
@@ -2870,15 +2870,17 @@ footer .footer-container .utility a:hover {
   }
 
   header .logo-content .social-toggle {
-    top: 16em;
+    top: 15em;
     width: 9em;
     border-radius: 0 0 15px 15px;
+    left: 14em;    
   }
 
   header .logo-content .logo-social {
-    top: 16em;
+    top: 15em;
     width: 9em;
     border-radius: 0 0 15px 15px;
+    right: -10em;
   }
 
   header .logo-content .logo-social a img {
